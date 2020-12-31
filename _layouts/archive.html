@@ -10,7 +10,7 @@ title: Archive
 
 
 {% for yy in site.posts %}
-<h4 class="mt-5 mb-neg-30" id="{{ tag[0] | replace: " ","-" }}"><span class="text-capitalize text-small badge badge-primary">{{ yy[0] }}</span></h4>
+<h4 class="mt-5 mb-neg-30" id="{{ yy[0] | replace: " ","-" }}"><span class="text-capitalize text-small badge badge-primary">{{ yy[0] }}</span></h4>
 <div class="blog-grid-container">
 {% assign pages_list = yy[1] %}
 {% for post in pages_list %}
