@@ -1,0 +1,66 @@
+nav.menu {
+    margin: .5rem 0;
+  }
+  
+  nav.menu a {
+    margin: 0 .5rem;
+    line-height: 1em;
+    font-size: 22px;
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  nav.menu a.parent,
+  nav.menu a.active {
+    text-decoration: underline;
+  }
+  
+  nav.menu.browse,
+  nav.menu.archives {
+    padding: .8rem .5rem;
+    border: 5px solid;
+    border-color: var(--border-gray);
+    background: var(--bg-gray);
+    text-align: center;
+    margin: 0;
+  }
+  
+  nav.menu.browse {
+    border-top: 0;
+  }
+  
+  nav.menu.archives {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  nav.menu.archives::after {
+    display: block;
+    content: '';
+    margin: .8rem auto 0;
+    border-top: 3px solid;
+    border-color: var(--border-gray);
+    width: 49%;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .visually-hidden {
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  
