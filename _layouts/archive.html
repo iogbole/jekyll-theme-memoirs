@@ -10,11 +10,13 @@ title: Archive
 
 <div class="blog-grid-container">
 
-{% for post in site.posts %}
-{% assign postyear = page.date | date: "%Y" %}
-{% if postyear == page.year %}
+{% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %b'"  %}
+{% for yearMonth in postsByYearMonth %}
+<h3> Posts in {{ postsByYearMonth }}</h3>
+{% for item in yearMonth.items limit: 1 %}
+
     {% include postbox.html %}
-{% endif %}    
+    {% endfor %}
 
 {% endfor %}
 
