@@ -13,11 +13,9 @@ title: Archive
 {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
 {% for yearMonth in postsByYearMonth %}
 <br>
-<hr>
-
-  <h3>{{ yearMonth.name }}</h3>
+<h3>{{ yearMonth.name }}</h3>
   <p></p>
-  <div class="blog-grid-item"></div>
+  <div class="blog-grid-item">
       {% for post in yearMonth.items %}
       <br>
       <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a> 
