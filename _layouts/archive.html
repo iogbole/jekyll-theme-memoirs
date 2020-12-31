@@ -14,9 +14,10 @@ title: Archive
 {% for yearMonth in postsByYearMonth %}
 <br>
 <hr>
-<div class="blog-grid-item">
+
   <h3>{{ yearMonth.name }}</h3>
   <p></p>
+  <div class="blog-grid-item"></div>
       {% for post in yearMonth.items %}
         
       <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
