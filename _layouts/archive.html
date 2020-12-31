@@ -6,22 +6,20 @@ title: Archive
 <!-- Begin List Posts
 ================================================== -->
 
-<h1>Archive of posts with 3 <span>{{ page.type }} '{{ page.title }}'</span></h1>
+<h1>Archive of posts with <span>{{ page.type }} '{{ page.title }}'</span></h1>
 
-
-{% for yy in site.posts %}
-<h4 class="mt-5 mb-neg-30" id="{{ yy[0] | replace: " ","-" }}"><span class="text-capitalize text-small badge badge-primary">{{ yy[0] }}</span></h4>
 <div class="blog-grid-container">
-{% assign pages_list = yy[1] %}
-{% for post in pages_list %}
-{% if post.title != null %}
-{% if group == null or group == post.group %}
-{% include postbox.html %}
-{% endif %}
-{% endif %}
+
+{% for post in site.posts %}
+
+{% assign postyear = page.date | date: "%Y" %}
+{% if postyear == page.year %}
+    {% include postbox.html %}
+{% endif %}    
+
+
 {% endfor %}
-{% assign pages_list = nil %}
-{% assign group = nil %}
+
 </div>
-{% endfor %}
+
 
