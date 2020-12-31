@@ -6,16 +6,18 @@ title: Archive
 <!-- Begin List Posts
 ================================================== -->
 
-<h1>Archive of posts from <span>{{ page.title | escape }}</span></h1>
+<h1>Archive of posts with <span>{{ page.type }} '{{ page.title }}'</span></h1>
 
 <div class="blog-grid-container">
 
-    {% for post in site.posts %}
-    {% assign postyear = post.date | date: "%Y" %}
-    {% if postyear == page.year %}
-        {% include postbox.html %}
-    {% endif %}    
-    
-    {% endfor %}
+{% for post in page.posts %}
+{% assign postyear = post.date | date: "%Y" %}
+{% if postyear == page.year %}
+
+{% include postbox.html %}
+{% endif %}   
+{% endfor %}
 
 </div>
+
+
