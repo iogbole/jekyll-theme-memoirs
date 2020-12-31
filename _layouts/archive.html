@@ -9,7 +9,7 @@ title: Archive
 <h1>Post Archive</span></h1>
 
 <div class="blog-grid-container">
-
+<div  style="text-align: right;"> 
 {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
 {% for yearMonth in postsByYearMonth %}
 <br>
@@ -22,7 +22,7 @@ title: Archive
       {% endfor %}
 
 {% endfor %}
-
+</div>
 </div>
 
 
