@@ -18,10 +18,7 @@ title: Archive
 <hr>
       {% for post in yearMonth.items %}
   <br>
-
-      <a class="post-link" href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a> 
-      <p></p>
-      <br>
+  {% include postbox.html %}
       {% endfor %}
 
 {% endfor %}
