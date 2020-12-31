@@ -7,6 +7,7 @@ tags: [Movies]
 image: assets/images/11.jpg
 description: "My review of Inception movie. Acting, plot and something else in this short description."
 rating: 4.5
+date:   2020-01-01 15:01:35 +0300
 ---
 
 Review products, books, movies, restaurant and anything you like on your Jekyll blog with **Memoirs**! JSON-LD ready for review property.

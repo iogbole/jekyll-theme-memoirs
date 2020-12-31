@@ -10,16 +10,13 @@ title: Archive
 
 <div class="blog-grid-container">
 
+{% for post in site.posts %}
+{% assign postyear = page.date | date: "%Y" %}
+{% if postyear == page.year %}
+    {% include postbox.html %}
+{% endif %}    
 
-{% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %b'"  %}
-    {% for yearMonth in postsByYearMonth %}
-    <li class="list-group-item py-1">
-    {% for item in yearMonth.items limit: 1 %}
-      <a href="{{ site.url }}/{{ item.date | date: '%Y/%m' }}">{{ yearMonth.name }}</a>
-    {% endfor %}
-    </li>
 {% endfor %}
-
 
 </div>
 

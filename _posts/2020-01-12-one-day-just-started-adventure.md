@@ -4,6 +4,7 @@ title:  "One day we just started our adventure"
 author: sal
 categories: [ Travel ]
 image: assets/images/15.jpg
+date:   2020-01-12 15:01:35 +0300
 ---
 The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes. 
 
