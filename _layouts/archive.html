@@ -15,12 +15,12 @@ title: Archive
 <br>
 <h3>{{ yearMonth.name }}</h3>
   <p></p>
-  <div class="blog-grid-item">
+
       {% for post in yearMonth.items %}
       <br>
       <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a> 
       {% endfor %}
- </div>   
+
 {% endfor %}
 
 </div>
