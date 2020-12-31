@@ -10,7 +10,7 @@ title: Archive
 
 <div class="blog-grid-container">
 
-    {% for post in site.posts %}
+    {% for post in page.posts %}
     {% assign postyear = post.date | date: "%Y" %}
     {% if postyear == page.year %}
     <h3> {{ postyear }} </h3>
