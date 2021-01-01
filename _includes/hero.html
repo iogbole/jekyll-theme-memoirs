@@ -4,17 +4,17 @@
       <div class="row">
         <div class="col col-6 col-t-12 last-item">
           <div class="hero__content">
-            <h1 class="hero__title">Mr</h1>
-            <p class="hero__subtitle">Bio</p>
+            <h1 class="hero__title">Hello, I’m Alex Rodriguez</h1>
+            <p class="hero__subtitle">Designs, talks, and writes about web, ethics, privacy, and dev. I share design tutorials, free resources and inspiration. Loves music & riding his bicycle.</p>
             <div class="hero__social">
               <span class="hero__social-title">Follow Me |</span>
-             
+              {% include followme.html %}
             </div>
           </div>
         </div>
         <div class="col col-6 col-t-12">
           <div class="hero__image">
-            <img src="" alt="image">
+            <img src="{{site.baseurl}}/{{ author.avatar }}" alt="image">
           </div>
         </div>
       </div>
