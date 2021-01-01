@@ -13,7 +13,7 @@ title: Archive
 {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
 {% for yearMonth in postsByYearMonth %}
 <p></p>
-<h3>{{ yearMonth.name }}</h3>
+<h3 class="text-capitalize badge badge-primary text-small">{{ yearMonth.name }}</h3>
 
 <hr>
       {% for post in yearMonth.items %}
