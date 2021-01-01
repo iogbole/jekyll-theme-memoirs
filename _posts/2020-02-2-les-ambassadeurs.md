@@ -6,7 +6,7 @@ categories: [ Lifestyle ]
 tags: [ France ]
 image: assets/images/2.jpg
 rating: 4.5
-date:   2020-02-02 15:01:35 +0300
+date:   2019-02-02 15:01:35 +0300
 ---
 
 Within the Hôtel de Crillon, which was built in 1758, Les Ambassadeurs operated as a restaurant since the mid-19th century. It reached its peak of fame as a restaurant and nightclub (a café-concert) in the last three decades of the 19th century. 
