@@ -12,6 +12,18 @@ include: ["_pages"]
 permalink: /:title/
 email: israel@iospire.com
 
+#-------------------------------
+# Hero Settings
+hero:
+  name: Israel Ogbole
+  image: https://user-images.githubusercontent.com/2548160/103445496-98488300-4c6c-11eb-9d7e-7c02104a908e.png
+  say-hello: Hello, I’m <strong>Israel Ogbole</strong>
+  bio: Designs, talks, and writes about <strong>web</strong>, <strong>ethics</strong>, <strong>privacy</strong>, and dev. I share design tutorials, free resources and inspiration. Loves <a href="#">music</a> & riding his bicycle.
+  twitter: https://twitter.com/ # Add your Twitter handle
+  facebook: https://facebook.com/ # Add your Facebook handle
+  instagram: https://instagram.com/ # Add your Instagram handle
+
+
 # Authors
 authors:
   sal:
