@@ -79,10 +79,9 @@ ga('send', 'pageview');
     <!-- Site Tag
     ================================================== -->
     {% if page.url == '/' %}
-        <p class="sitetag">
-            {{ site.description }}
-            
-        </p>
+    
+    {% include hero.html %}
+
     {% endif %}
 
     <!-- Content
